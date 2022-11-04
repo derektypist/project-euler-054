@@ -30,5 +30,22 @@ function pokerHands(arr) {
             return c;
         }
     }
+
+    function compareHands(h1, h2) {
+        let d1 = getHandDetails(h1);
+        let d2 = getHandDetails(h2);
+        if (d1.rank === d2.rank) {
+            if (d1.value < d2.value) {
+                return "WIN";
+            } else if (d1.value > d2.value) {
+                return "LOSE";
+            } else {
+                return "DRAW";
+            }
+        }
+        return d1.rank < d2.rank ? "WIN" : "LOSE";
+    }
+
+    
 }
 
