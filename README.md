@@ -24,3 +24,24 @@ How many hands does player 1 win?
 
 Information at [Project Euler 054](https://projecteuler.net/problem=54)
 
+## UX
+
+**Getting Started**
+
+Select Show Solution to show the solution.  Select Hide Solution to hide the solution.  You can also view detailed instructions with examples of the five hands dealt to two players and the random hands dealt to two players.
+
+**User Stories**
+
+As a user, I can show or hide the solution by selecting the appropriate button
+
+As a user, I can view more detailed instructions
+
+As a user, I can view the random hands dealt to two players
+
+As a user, I expect `pokerHands(handsArr)` to return a number.
+
+As a user, I expect `pokerHands(handsArr)` to return 376.
+
+**Information Architecture**
+
+The function `pokerHands(arr)` returns a number, where `arr` is a string array.
