@@ -66,7 +66,7 @@ Deployed on [GitHub Pages](https://derektypist.github.io/project-euler-054) at t
 
 ### Content
 
-Code in script.js taken from [Mike Talbot - Real World JavaScript map/reduce - Solving the Poker Hand Problem](https://dev.to/miketalbot/real-world-javascript-map-reduce-solving-the-poker-hand-problem-3eie), which was accessed on March 2022.
+Code in script.js taken from [Mike Talbot - Real World JavaScript map/reduce - Solving the Poker Hand Problem](https://dev.to/miketalbot/real-world-javascript-map-reduce-solving-the-poker-hand-problem-3eie), which was accessed on March 2022.  Array `handsArr` in script.js taken from [FreeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp).
 
 ### Acknowledgements
 
