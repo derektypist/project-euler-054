@@ -46,6 +46,13 @@ function pokerHands(arr) {
         return d1.rank < d2.rank ? "WIN" : "LOSE";
     }
 
-    
+    let score = 0;
+    for (let i=0;i<arr.length;i++) {
+        let player1Hand = arr[i].slice(0,14);
+        let player2Hand = arr[i].slice(15);
+        let decision = compareHands(player1Hand, player2Hand);
+        if (decision == "WIN") score++;
+    }
+    return score;
 }
 
