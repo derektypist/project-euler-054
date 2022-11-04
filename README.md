@@ -45,3 +45,15 @@ As a user, I expect `pokerHands(handsArr)` to return 376.
 **Information Architecture**
 
 The function `pokerHands(arr)` returns a number, where `arr` is a string array.
+
+## Credits
+
+### Content
+
+Code in script.js taken from [Mike Talbot - Real World JavaScript map/reduce - Solving the Poker Hand Problem](https://dev.to/miketalbot/real-world-javascript-map-reduce-solving-the-poker-hand-problem-3eie), which was accessed on March 2022.
+
+### Acknowledgements
+
+- [Project Euler](https://projecteuler.net)
+- [Mike Talbot](https://dev.to/miketalbot/real-world-javascript-map-reduce-solving-the-poker-hand-problem-3eie)
+- [FreeCodeCamp](https://www.freecodecamp.org)
