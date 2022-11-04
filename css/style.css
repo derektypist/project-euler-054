@@ -7,6 +7,11 @@ body {
     padding: 1rem;
 }
 
+/* Subtitle */
+h2 {
+    color: purple;
+}
+
 /* Links */
 .links {
     padding: 1.3rem;
