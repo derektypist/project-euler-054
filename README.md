@@ -46,6 +46,22 @@ As a user, I expect `pokerHands(handsArr)` to return 376.
 
 The function `pokerHands(arr)` returns a number, where `arr` is a string array.
 
+## Features
+
+Allows the user to show or hide the solution as described in [Project Euler 054](https://projecteuler.net/problem=54).  Also allows the user to view the random hands and detailed instructions (including examples of hands).
+
+## Technologies
+
+Uses HTML5, CSS3, JavaScript, Bootstrap 5.2.2 and Google Fonts.
+
+## Testing
+
+Ensure all user stories have been met.
+
+## Deployment
+
+Deployed on [GitHub Pages](https://derektypist.github.io/project-euler-054) at the main branch.
+
 ## Credits
 
 ### Content
