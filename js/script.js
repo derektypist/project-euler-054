@@ -56,6 +56,7 @@ function pokerHands(arr) {
     return score;
 }
 
+// Set Up Global Array
 const handsArr = [
     '8C TS KC 9H 4S 7D 2S 5D 3S AC',
     '5C AD 5D AC 9C 7C 5H 8D TD KS',
@@ -1059,5 +1060,10 @@ const handsArr = [
     'AS KD 3D JD 8H 7C 8C 5C QD 6C'
   ];
 
-  
-
+  // Function to Show Solution
+  function showSolution() {
+    // Set Up Variable
+    let txt = `Solution is ${pokerHands(handsArr)}. <br>`;
+    // Display Solution in the Browser
+    document.getElementById("solution").innerHTML = txt;
+  }
