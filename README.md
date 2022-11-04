@@ -30,6 +30,9 @@ Information at [Project Euler 054](https://projecteuler.net/problem=54)
 
 Select Show Solution to show the solution.  Select Hide Solution to hide the solution.  You can also view detailed instructions with examples of the five hands dealt to two players and the random hands dealt to two players.
 
+- [Detailed Instructions](pdf/instructions.pdf)
+- [Poker Hands](pdf/pokerhands.pdf)
+
 **User Stories**
 
 As a user, I can show or hide the solution by selecting the appropriate button
@@ -66,7 +69,7 @@ Deployed on [GitHub Pages](https://derektypist.github.io/project-euler-054) at t
 
 ### Content
 
-Code in script.js taken from [Mike Talbot - Real World JavaScript map/reduce - Solving the Poker Hand Problem](https://dev.to/miketalbot/real-world-javascript-map-reduce-solving-the-poker-hand-problem-3eie), which was accessed on March 2022.  Array `handsArr` in script.js taken from [FreeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp).  PDF file pokerhands.pdf taken from [Project Euler 054 - Text File](https://projecteuler.net/project/resources/p054_poker.txt).
+Code in script.js taken from [Mike Talbot - Real World JavaScript map/reduce - Solving the Poker Hand Problem](https://dev.to/miketalbot/real-world-javascript-map-reduce-solving-the-poker-hand-problem-3eie), which was accessed on March 2022.  Array `handsArr` in script.js taken from [FreeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp).  [Poker Hands PDF File](pdf/pokerhands.pdf) taken from [Project Euler 054 - Text File](https://projecteuler.net/project/resources/p054_poker.txt).
 
 ### Acknowledgements
 
