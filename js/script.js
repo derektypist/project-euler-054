@@ -1014,7 +1014,7 @@ function pokerHands(arr) {
     function getHandDetails(hand) {
         const cards = hand.split(' ');
         const faces = cards.map(a => String.fromCharCode([77 - order.indexOf(a[0])])).sort();
-        const suits = cards.map(a => a[1].sort());
+        const suits = cards.map(a => a[1]).sort();
         const counts = faces.reduce(count, {});
         const duplicates = Object.values(counts).reduce(count, {});
         const flush = suits[0] === suits[4];
