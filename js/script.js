@@ -11,13 +11,13 @@ function pokerHands(arr) {
         const cards = hand.split(' ');
         const faces = cards.map(a => String.fromCharCode([77 - order.indexOf(a[0])])).sort();
         const suits = cards.map(a => a[1].sort());
-        const counts = faces.reduce(count,{});
-        const duplicates = Object.values(counts).reduce(count,{});
+        const counts = faces.reduce(count, {});
+        const duplicates = Object.values(counts).reduce(count, {});
         const flush = suits[0] === suits[4];
         const first = faces[0].charCodeAt(0);
         const straight = faces.every((f, index) => f.charCodeAt(0) - first === index);
         let rank = (flush && straight && 1) || (duplicates[4] && 2) || (duplicates[3] && duplicates[2] && 3) || (flush && 4) || (straight && 5) || (duplicates[3] && 6) || (duplicates[2] > 1 && 7) || (duplicates[2] && 8) || 9;
-        return {rank, value: faces.sort(byCountFirst).join("")};
+        return { rank, value: faces.sort(byCountFirst).join("") };
 
         function byCountFirst(a, b) {
             const countDiff = counts[b] - counts[a];
@@ -47,8 +47,8 @@ function pokerHands(arr) {
     }
 
     let score = 0;
-    for (let i=0;i<arr.length;i++) {
-        let player1Hand = arr[i].slice(0,14);
+    for (let i = 0; i < arr.length; i++) {
+        let player1Hand = arr[i].slice(0, 14);
         let player2Hand = arr[i].slice(15);
         let decision = compareHands(player1Hand, player2Hand);
         if (decision == "WIN") score++;
@@ -1058,18 +1058,18 @@ const handsArr = [
     '9C JD 7C 6D TC 6H 6C JC 3D 3S',
     'QC KC 3S JC KD 2C 8D AH QS TS',
     'AS KD 3D JD 8H 7C 8C 5C QD 6C'
-  ];
+];
 
-  // Function to Show Solution
-  function showSolution() {
+// Function to Show Solution
+function showSolution() {
     // Set Up Variable
     let txt = `Solution is ${pokerHands(handsArr)}. <br>`;
     // Display Solution in the Browser
     document.getElementById("solution").innerHTML = txt;
-  }
+}
 
-  // Function to Hide Solution
-  function hideSolution() {
+// Function to Hide Solution
+function hideSolution() {
     let txt = "";
     document.getElementById("solution").innerHTML = txt;
-  }
+}
