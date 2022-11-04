@@ -18,6 +18,7 @@ function pokerHands(arr) {
         const straight = faces.every((f, index) => f.charCodeAt(0) - first === index);
         let rank = (flush && straight && 1) || (duplicates[4] && 2) || (duplicates[3] && duplicates[2] && 3) || (flush && 4) || (straight && 5) || (duplicates[3] && 6) || (duplicates[2] > 1 && 7) || (duplicates[2] && 8) || 9;
         return { rank, value: faces.sort(byCountFirst).join("") };
+    }
 
         function byCountFirst(a, b) {
             const countDiff = counts[b] - counts[a];
@@ -29,7 +30,7 @@ function pokerHands(arr) {
             c[a] = (c[a] || 0) + 1;
             return c;
         }
-    }
+    
 
     function compareHands(h1, h2) {
         let d1 = getHandDetails(h1);
